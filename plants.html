@@ -8,6 +8,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .container>div {
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        background-color: cornsilk;
+    }
+    
+    @media (max-width: 700px) {
+        .container {
+            background-color: blanchedalmond;
+        }
+    }
+</style>
 </head>
 <body>
     <h1>Plants by Shivaram kothapally</h1>
@@ -52,9 +66,15 @@
 
         </p>
         <div class="container">
+        <a target="_blank" href="https://raw.githubusercontent.com/44-563-Web-Apps-S21/webapps-s21-assignment-5-shivaramkothapally/main/images/hibiscus.jpg">
             <img src="images/hibiscus.jpg" class=" img-thumbnail" alt="Hibiscus" width="304" height="236">
+        </a>
+        <a target="_blank" href="https://raw.githubusercontent.com/44-563-Web-Apps-S21/webapps-s21-assignment-5-shivaramkothapally/main/images/phlox.jpg"></a>
             <img src="images/phlox.jpg" class="img-thumbnail" alt="phlox" width="304" height="236">
+        </a>
+        <a target="_blank" href="https://raw.githubusercontent.com/44-563-Web-Apps-S21/webapps-s21-assignment-5-shivaramkothapally/main/images/tulips.jpg">
             <img src="images/tulips.jpg" class="img-thumbnail" alt="tulips" width="304" height="236">
+        </a>
 
             
         </div>
@@ -87,25 +107,25 @@
                     <td>Ohio</td>
                     <td>Okra</td>
                 </tr>
-                <tr class="info">
+                <tr class="table-danger">
                     <td>T</td>
                     <td>Tulips</td>
                     <td>Tennesse</td>
                     <td>Tomato</td>
                 </tr>
-                <tr class="active">
+                <tr class="table-active">
                     <td>H</td>
                     <td>Hibiscus</td>
                     <td>Houston</td>
                     <td>Haleem</td>
                 </tr>
-                <tr class="table-secondary">
+                <tr class="table-light">
                     <td>A</td>
                     <td>Allium</td>
                     <td>Arakansas</td>
                     <td>Almond</td>
                 </tr>
-                <tr class="success">
+                <tr class="table-success">
                     <td>P</td>
                     <td>Phlox</td>
                     <td>Pensulvynia</td>
@@ -116,17 +136,17 @@
     </div>
     <hr>
     <h2>Button Groups</h2>
-    <div class="btn-toolbar">
-        <div class="btn-group">
+    <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group mr-2" role="group">
             <button type="button" class="btn btn-success">Hibiscus</button>
             <button type="button" class="btn btn-success">Phlox</button>
             <button type="button" class="btn btn-success">Tulips</button>
         </div>
-        <div class="btn-group">
+        <div class="btn-group mr-2" role="group">
             <button type="button" class="btn btn-info">Allium</button>
             <button type="button" class="btn btn-info">Opuntia</button>
         </div>
-        <div class="btn-group">
+        <div class="btn-group mr-2" role="group">
             <button type="button" class="btn btn-danger">Kerria</button>
         </div>
     </div>
@@ -143,12 +163,12 @@
     <hr>
     <form>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            &nbsp;<label for="exampleInputEmail1">Email address</label>
+            &nbsp;<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Plant</label>
+            &nbsp;<label for="exampleInputEmail1">Plant</label>
             <input type="name" class="form-control" id="exampleInputPlant" placeholder="Enter plant name">
         </div>
         <div class="form-check">
@@ -157,6 +177,37 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <h2>Bonus section</h2>
+        <div class="col-sm-6">
+            <div class="card" style="width:550px">
+                <img class="card-img-top" src="images/hibiscus.jpg" alt="card image" style="width:100%">
+                <div class="card-body">
+                    <h4>Hibiscus</h4>
+                    <p class="card-text">Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native to warm temperate, subtropical and tropical regions throughout the world.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Hibiscus" alt="wiki page">Hibiscus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/phlox.jpg" alt="card image" style="width:100%">
+                <div class="card-body">
+                    <h4>Phlox</h4>
+                    <p class="card-text">Phlox is a genus of 67 species of perennial and annual plants in the family Polemoniaceae. They are found mostly in North America in diverse habitats from alpine tundra to open woodland and prairie. Some flower in spring, others in summer and fall</p>
+                    <a href="https://en.wikipedia.org/wiki/Phlox" alt="wiki page">Phlox</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="images/tulips.jpg" alt="card image" style="width:100%">
+            <div class="card-body">
+                <h4>Tulips</h4>
+                <p class="card-text">Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes (having bulbs as storage organs). The flowers are usually large, showy and brightly colored, generally red, pink, yellow, or white (usually in warm colors).</p>
+                <a href="https://en.wikipedia.org/wiki/Tulip" alt="wiki page">Tulips</a>
+            </div>
+        </div>
+
 
 
 
